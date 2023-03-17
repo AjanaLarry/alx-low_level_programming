@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /*
- *function main - entry point of the code
+ *function main() - entry point of the code
  *
- *puts - prints exactly "Programming is like building a multilingual puzzle, followed by a new line."
+ *puts - prints "Programming is like building a multilingual puzzle"
  *
  *return - ends the function main()
  */
