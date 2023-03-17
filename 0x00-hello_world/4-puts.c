@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-/*
- *function main() - entry point of the code
+/**
+ *main - entry point of the code
  *
- *puts - prints "Programming is like building a multilingual puzzle"
+ *Description - prints "Programming is like building a multilingual puzzle"
  *
- *return - ends the function main()
+ *Return - ends the function main()
  */
 
 
