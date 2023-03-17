@@ -3,9 +3,9 @@
 /**
  *main - entry point of the code
  *
- *Description - prints "Programming is like building a multilingual puzzle"
+ *Description: prints "Programming is like building a multilingual puzzle"
  *
- *Return - ends the function main()
+ *Return: ends the function main()
  */
 
 
