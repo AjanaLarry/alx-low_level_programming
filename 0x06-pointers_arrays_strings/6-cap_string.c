@@ -4,27 +4,34 @@ nclude "main.h"
 * *cap_string - a function that capitalizes all words of a string
 * @str: string
 * Return: string
-**/
+*/
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int i = 1;
+	int i;
+	int prev;
 
-	if (str[0] >= 'a' && str[0] <= 'z')
-		str[0] = str[0] - 32;
-
-	while (str[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((str[i - 1] == ' ' || str[i - 1] == '\t'
-		     || str[i - 1] == '\n' || str[i - 1] == ',' || str[i - 1] == ';'
-		     || str[i - 1] == '.' || str[i - 1] == '!' || str[i - 1] == '?'
-		     || str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')'
-		     || str[i - 1] == '{' || str[i - 1] == '}')
-		     && (str[i] >= 'a' && str[i] <= 'z'))
+		prev = i - 1;
+		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			str[i] = str[i] - 32;
+			if (i == 0)
+				s[i] = s[i] - 32;
+			else if (s[prev] >= 9 && s[prev] <= 10)
+				s[i] = s[i] - 32;
+			else if (s[prev] >= 32 && s[prev] <= 34)
+				s[i] = s[i] - 32;
+			else if (s[prev] >= 40 && s[prev] <= 41)
+				s[i] = s[i] - 32;
+			else if (s[prev] == 46)
+				s[i] = s[i] - 32;
+			else if (s[prev] == 59)
+				s[i] = s[i] - 32;
+			else if (s[prev] == 123 || s[prev] == 125)
+				s[i] = s[i] - 32;
 		}
-		i++;
 	}
-	return (str);
+
+	return (s);
 }
