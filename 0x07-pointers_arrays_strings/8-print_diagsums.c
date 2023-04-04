@@ -10,16 +10,16 @@ void print_diagsums(int *a, int size)
 {
 	int i;
 	int j;
-	int s0 = 0;
-	int s1 = 0;
+	int asum = 0;
+	int bsum = 0;
 
 	for (i = 0; i < size * size; i += (size + 1))
 	{
-		s0 += a[i];
+		asum += a[i];
 	}
 	for (j = size - 1; j < size * size - (size - 1); j += (size - 1))
 	{
-		s1 += a[j];
+		bsum += a[j];
 	}
-	printf("%d, %d\n", s0, s1);
+	printf("%d, %d\n", asum, bsum);
 }
