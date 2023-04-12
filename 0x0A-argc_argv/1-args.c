@@ -8,7 +8,6 @@
  * @argv: array 
  * Return: success as (0)
  */
-
 int main(int argc, char *argv[] __attribute__((unused)))
 {
 	if (argc > 0)
