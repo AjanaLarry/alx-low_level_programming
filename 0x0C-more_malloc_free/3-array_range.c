@@ -7,7 +7,7 @@
 * @min: minimum int
 * @max: maximum int
 * Return: pointer to allocated memory
-*/
+**/
 
 int *array_range(int min, int max)
 {
