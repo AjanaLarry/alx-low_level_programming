@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
-* str_concat - a function that concatenates two strings
+* string_nconcat - a function that concatenates two strings
 * @s1: string 1
 * @s2: string 2
 * @n: unsigned int
@@ -20,12 +20,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	i = 0;
 	j = 0;
 
-	if (!s1)
+	if (s1 == NULL)
 		s1 = "";
-	if (!s2)
+	if (s2 == NULL)
 		s2 = "";
+
 	while (s1[len1])
-		len1++;
+		len1 += 1;
 	arr = malloc(len1 + n + 1);
 
 	if (arr == NULL)
@@ -34,13 +35,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s1[i])
 	{
 		arr[i] = s1[i];
-		i++;
+		i += 1;
 	}
 
 	while (j < n)
 	{
 		arr[i + j] = s2[j];
-		j++;
+		j += 1;
 	}
 	arr[i + j] = '\0';
 	return (p);
