@@ -1,13 +1,9 @@
 #include "dog.h"
-
 /**
 * print_dog - funtions that 
 * prints a struct dog
-*
 * @d: pointer to my dog 
-* Return - void
 */
-
 void print_dog(struct dog *d)
 {
         if (d)
