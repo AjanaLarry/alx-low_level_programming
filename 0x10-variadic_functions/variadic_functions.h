@@ -4,7 +4,7 @@
 
 typedef struct format
 {
-	char *f;
+	char *p;
 	void (*func)(va_list vargs);
 } frm_t;
 
