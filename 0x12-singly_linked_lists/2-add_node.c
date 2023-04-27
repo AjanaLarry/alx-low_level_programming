@@ -20,9 +20,9 @@ list_t *add_node(list_t **head, const char *str)
 	for (i = 0; str[i] != '\0';)
 		i += 1;
 
-	ret_list->str = string;
-	ret_list->next = *head;
-	ret_list->len = i;
+	new->str = string;
+	new->next = *head;
+	new->len = i;
 	*head = new;
 	return (*head);
 }
