@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* add_node - add a new node to the beginning of a linked_list
+* add_node_end - add a node to the end of a linked_list
 * @head: points to a linked_list
 * @str: string
 * Return: linked_list
