@@ -1,7 +1,6 @@
 #include "lists.h"
 /**
- * listint_len - func that  returns the number of elements 
- * in a linked list
+ * listint_len - func returns the number of elements in a linked list
  * @h: linked list head
  * Return: number of elements
  */
